@@ -17,6 +17,9 @@ class LinkedList{
         void PopBack();
         void PopFront();
         void DeleteLinkedList();
+        Node* Head();
+        void DecreamentSize();
+        void IncreamentSize();
 };
 
 #endif

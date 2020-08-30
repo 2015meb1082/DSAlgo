@@ -1,2 +1,4 @@
-*hpp.gch
+*.hpp.gch
 *.out
+!.gitignore
+!.vscode

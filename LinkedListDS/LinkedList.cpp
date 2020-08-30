@@ -20,11 +20,12 @@ void LinkedList::PushFront(int data){
     }
     newNode->next = head;
     head =newNode;
-    std::cout<<"Element inserted in front\n";
+    
 }
 
 void LinkedList::PushBack(int data){
     Node *newNode = new Node(data);
+    count++;
     if(!head){
         head =newNode;
         return;
@@ -34,7 +35,7 @@ void LinkedList::PushBack(int data){
         current=current->next;
     }
     current->next =newNode;
-    std::cout<<"Inserted in the back\n";
+    
 }
 
 //Print the Linked List
@@ -68,7 +69,7 @@ void LinkedList::PopFront(){
     Node *temp = head;
     head =head->next;
     delete temp;
-    std::cout<<"Deleted from the front! \n";
+    
 }
 
 void LinkedList::PopBack(){
@@ -84,7 +85,7 @@ void LinkedList::PopBack(){
     }
     prev->next = NULL;
     delete current;
-    std::cout<<"Deleted from the back!\n";
+   
 
 }
 
@@ -99,4 +100,14 @@ void LinkedList::DeleteLinkedList(){
     }
     count=0;
     std::cout<<"LINKED LIST DELETED\n";
+}
+
+Node* LinkedList::Head(){
+    return head;
+}
+void LinkedList::DecreamentSize(){
+    --count;
+}
+void LinkedList::IncreamentSize(){
+    ++count;
 }
