@@ -64,7 +64,7 @@ int main(){
         
     }else{
         for(int i=0;i<10;i++){
-        list->PushBack((i+1)*10);
+            list->PushBack((i+1)*10);
         }
         list->Print();
         Node *KthToLastNode = FindKthToLastNodeInOnePass(list,k);

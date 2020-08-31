@@ -20,6 +20,7 @@ class LinkedList{
         Node* Head();
         void DecreamentSize();
         void IncreamentSize();
+        Node* FindMidNode();
 };
 
 #endif
