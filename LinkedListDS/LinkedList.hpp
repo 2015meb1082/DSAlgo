@@ -18,6 +18,7 @@ class LinkedList{
         void PopFront();
         void DeleteLinkedList();
         Node* Head();
+        void SetHead(Node* newHead);
         void DecreamentSize();
         void IncreamentSize();
         Node* FindMidNode();

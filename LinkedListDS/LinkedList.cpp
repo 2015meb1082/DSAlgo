@@ -105,6 +105,9 @@ void LinkedList::DeleteLinkedList(){
 Node* LinkedList::Head(){
     return head;
 }
+void LinkedList::SetHead(Node* newHead){
+    head = newHead;
+}
 void LinkedList::DecreamentSize(){
     --count;
 }
