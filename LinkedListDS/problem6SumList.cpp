@@ -55,6 +55,7 @@ int main(){
     list1->PushBack(6);
     list1->PushBack(2);
     list1->PushBack(5);
+    std::cout<<"Input: \n";
     list1->Print();
     LinkedList *list2 = new LinkedList();
     list2->PushBack(5);
@@ -62,7 +63,7 @@ int main(){
     list2->PushBack(3);
     list2->Print();
     Node* result = SumList(list1->Head(),list2->Head(),0);
-    
+    std::cout<<"Output: \n";
     Print(result);
     return 0;
 }
