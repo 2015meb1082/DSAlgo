@@ -47,6 +47,7 @@ Node *ReverseAndClone(Node *head){
 
     return reversedList->Head();
 }
+// Time O(n) , space - O(n)
 bool CheckPalindrome(Node *head){
     Node *reverseListHead =  ReverseAndClone(head);
     Node *current1 =head,*current2 = reverseListHead;
