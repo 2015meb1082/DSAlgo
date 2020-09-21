@@ -2,7 +2,6 @@
 #include<iostream>
 #include<string>
 
-
 //Can be replaced by std::swap
 void Swap(char *a,char *b){
     char temp = *a;
@@ -21,8 +20,7 @@ void Permutation(std::string &S,int n){
             Permutation(S,n-1);
             std::swap(S[n-1],S[i]);
         }
-    }
-    
+    } 
 }
 
 int main(){
