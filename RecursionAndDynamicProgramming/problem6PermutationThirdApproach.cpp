@@ -1,5 +1,4 @@
 //Calculate permutations of a string with distinct characters
-
 // P("abc") = a+ P("bc"), b+P("ac"), c+P("ab") then solve the subproblems
 
 #include<iostream>
